@@ -1,0 +1,8 @@
+rg_name = "template1_rg"
+vnet_name = "template1_vnet"
+subnet_name = "template1_subnet"
+nic_name = "template1_nic"
+vm_name = "template1_vm"
+nsg_name = "template1_nsg"
+username = "azureadmin"
+ssh_key_name = "template1_ssh_key"
