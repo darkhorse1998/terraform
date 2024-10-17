@@ -18,6 +18,11 @@ variable "subnet_name" {
   default = "demo_subnet"
 }
 
+variable "public_ip" {
+  type = string
+  default = "demo_public_ip"
+}
+
 variable "nic_name" {
   type = string
   default = "demo_nic"
