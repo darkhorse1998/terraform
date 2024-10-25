@@ -11,8 +11,9 @@ resource "azurerm_storage_account" "storage_account" {
   account_replication_type = "LRS"
 }
 
-resource "azurerm_storage_container" "example" {
-  name                  = 
+resource "azurerm_storage_container" "container" {
+  for_each              = var.container_name_access_type
+  name                  = each.key
   storage_account_name  = azurerm_storage_account.storage_account.name
-  container_access_type = 
+  container_access_type = each.value
 }

@@ -1,10 +1,9 @@
-rg_name = "template2_rg"
-vnet_name = "template2_vnet"
-subnet_name = "template2_subnet"
-public_ip = "template2_public_ip"
-nic_name = "template2_nic"
-vm_name = "template2vm"
-nsg_name = "template2_nsg"
-username = "azureadmin"
-ssh_key_name = "template2_ssh_key"
-create_vm = true
+rg_name = "template3_rg"
+storage_account_name = "template3_storage_account"
+container_name_access_type = [
+    {
+        "template3_container-1": "private",
+        "template3_container-2": "blob",
+        "template3_container-3": "container"
+    }
+]
