@@ -1,0 +1,10 @@
+rg_name = "template2_rg"
+vnet_name = "template2_vnet"
+subnet_name = "template2_subnet"
+public_ip = "template2_public_ip"
+nic_name = "template2_nic"
+vm_name = "template2vm"
+nsg_name = "template2_nsg"
+username = "azureadmin"
+ssh_key_name = "template2_ssh_key"
+create_vm = true
