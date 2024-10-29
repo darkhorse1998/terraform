@@ -13,13 +13,20 @@ variable "storage_account_name" {
   default = "demo-storage-account"
 }
 
-variable "container_name_access_type" {
+variable "container_names" {
   type = list()
   default = [
-    {
-      "demo-container-1": "private",
-      "demo-container-2": "blob",
-      "demo-container-3": "container"
-    }
+      "demo-container-1",
+      "demo-container-2",
+      "demo-container-3"
+  ]
+}
+
+variable "container_access_types" {
+  type = list()
+  default = [
+      "container",
+      "container",
+      "container"
   ]
 }
